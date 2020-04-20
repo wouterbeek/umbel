@@ -15,7 +15,9 @@ vann:preferredNamespacePrefix a owl:AnnotationProperty.
 vann:preferredNamespaceUri a owl:AnnotationProperty.
 
 <http://umbel.org/umbel>
-  dce:creator "Ontotext AD"@en, "Structured Dynamics LLC"@en;
+  dce:creator
+    "Ontotext AD"@en,
+    "Structured Dynamics LLC"@en;
   vann:preferredNamespacePrefix "umbel";
   vann:preferredNamespaceUri "http://umbel.org/umbel#";
   a owl:Ontology;
@@ -35,7 +37,7 @@ umbel:Activities
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Drugs, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:Geopolitical, umbel:NaturalSubstances, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time, umbel:Workplaces ) ];
+      owl:unionOf ( umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Drugs umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:Geopolitical umbel:NaturalSubstances umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time umbel:Workplaces ) ];
   skos:definition "These are ongoing activities that result (mostly) from human effort, often conducted by organizations to assist other organizations or individuals (in which case they are known as services, such as medicine, law, printing, consulting or teaching) or individual or group efforts for leisure, fun, sports, games or personal interests (activities) "@en;
   skos:prefLabel "activities"@en.
 
@@ -44,7 +46,7 @@ umbel:Animals
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:AudioInfo, umbel:Drugs, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:AudioInfo umbel:Drugs umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This large SuperType includes all animal types, including specific animal types and vertebrates, invertebrates, insects, crustaceans, fish, reptiles, amphibia, birds, mammals, and animal body parts. Animal parts are specifically included. Also, groupings of such animals are included. Humans, as an animal, are included (versus as an individual Person). Diseases are specifically excluded. Animals have many of the similar overlaps to Plants. However, in addition, there are more terms for animal groups, animal parts, animal secretions, etc. Also Animals can include some human traits (posture, dead animal, etc) "@en;
   skos:prefLabel "animals"@en.
 
@@ -59,7 +61,7 @@ umbel:AudioInfo
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType is for any audio-only human work. Examples include live music performances, record albums, or radion shows or individual radio broadcasts "@en;
   skos:prefLabel "audio information"@en.
 
@@ -82,7 +84,7 @@ umbel:Chemistry
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:AudioInfo, umbel:Diseases, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:AudioInfo umbel:Diseases umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:Geopolitical umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType is a residual category (n.o.c., not otherwise categorized) for chemical bonds, chemical composition groupings, and the like. It is formed by what is not a natural substance or living thing (organic) substance. "@en;
   skos:prefLabel "chemistry"@en.
 
@@ -91,7 +93,7 @@ umbel:Diseases
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:AudioInfo, umbel:Chemistry, umbel:Drugs, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:AudioInfo umbel:Chemistry umbel:Drugs umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "Diseases are atypical or unusual or unhealthy conditions for (mostly human) living things, generally known as conditions, disorders, infections, diseases or syndromes. Diseases only affect living things and sometimes are caused by living things. This SuperType also includes impairments, disease vectors, wounds and injuries, and poisoning."@en;
   skos:prefLabel "diseases"@en.
 
@@ -100,7 +102,7 @@ umbel:Drugs
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Diseases, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Prokaryotes, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Diseases umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:Geopolitical umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Prokaryotes umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType is an drug, medication or addictive substance "@en;
   skos:prefLabel "drugs"@en.
 
@@ -109,7 +111,7 @@ umbel:Earthscape
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Events, umbel:FoodDrink, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Events umbel:FoodDrink umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:WrittenInfo ) ];
   skos:definition """The Natural Feature SuperType is the collection of cartographic features that occur on the surface of the Earth. Positive examples include Mountain, Ocean, and Mesa. Artificial features such as canals are excluded. Most instances of these features have a fixed location in space.
 
 Underground and underwater are also explicitly contained.
@@ -122,7 +124,7 @@ umbel:Events
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:Drugs, umbel:Earthscape, umbel:Facilities, umbel:Geopolitical, umbel:NaturalSubstances, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Workplaces ) ];
+      owl:unionOf ( umbel:Animals umbel:Drugs umbel:Earthscape umbel:Facilities umbel:Geopolitical umbel:NaturalSubstances umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Workplaces ) ];
   skos:definition "These are nameable occasions, games, sports events, conferences, natural phenomena, natural disasters, wars, incidents, anniversaries, holidays, or notable moments or periods in time "@en;
   skos:prefLabel "events"@en.
 
@@ -146,7 +148,7 @@ umbel:Extraterrestrial
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType includes all natural things not specifically terrestrial, including celestial bodies (planets, asteroids, stars, galaxies, etc., that can be located within a sky map)."@en;
   skos:prefLabel "Extraterrestrial"@en.
 
@@ -155,7 +157,7 @@ umbel:Facilities
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Events, umbel:Extraterrestrial, umbel:FoodDrink, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Events umbel:Extraterrestrial umbel:FoodDrink umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:WrittenInfo ) ];
   skos:definition """Facilities are physical places or buildings constructed by humans, such as schools, public institutions, markets, museums, amusement parks, worship places, stations, airports, ports, carstops, lines, railroads, roads, waterways, tunnels, bridges, parks, sport facilities, monuments. All can be geospatially located.
 
 Facilities also include animal pens and enclosures and general human "activity" areas (golf course, archeology sites, etc.). Iportantly Facilities include infrastructure systems such as roadways and physical networks.
@@ -168,7 +170,7 @@ umbel:FinanceEconomy
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Extraterrestrial, umbel:FoodDrink, umbel:NaturalPhenomena, umbel:Numbers, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time, umbel:VisualInfo ) ];
+      owl:unionOf ( umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Extraterrestrial umbel:FoodDrink umbel:NaturalPhenomena umbel:Numbers umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time umbel:VisualInfo ) ];
   skos:definition "This SuperType pertains to all things financial and with respect to the economy, including chartable company performance, stock index entities, money, local currencies, taxes, incomes, accounts and accounting, mortgages and property. "@en;
   skos:prefLabel "finance and economy"@en.
 
@@ -177,7 +179,7 @@ umbel:FoodDrink
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:AudioInfo, umbel:Diseases, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Prokaryotes, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:AudioInfo umbel:Diseases umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:Geopolitical umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Prokaryotes umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType is any edible substance grown, made or harvested by humans. The category also specifically includes the concept of cuisines "@en;
   skos:prefLabel "food or drink"@en.
 
@@ -186,7 +188,7 @@ umbel:Geopolitical
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Events, umbel:Extraterrestrial, umbel:FoodDrink, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Events umbel:Extraterrestrial umbel:FoodDrink umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:PersonTypes umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:WrittenInfo ) ];
   skos:definition "Named places that have some informal or formal political (authorized) component. Important subcollections include Country, IndependentCountry, State_Geopolitical, City, and Province. "@en;
   skos:prefLabel "geopolitical"@en.
 
@@ -221,7 +223,7 @@ umbel:NaturalPhenomena
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Drugs, umbel:Earthscape, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Drugs umbel:Earthscape umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType includes natural phenomena and natural processes such as weather, weathering, erosion, fires, lightning, earthquakes, tectonics, etc. Clouds and weather processes are specifically included. Also includes climate cycles, general natural events (such as hurricanes) that are not specifically named, and biochemical processes and pathways. "@en;
   skos:prefLabel "natural phenomena"@en.
 
@@ -230,7 +232,7 @@ umbel:NaturalSubstances
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:AudioInfo, umbel:Diseases, umbel:Events, umbel:NaturalPhenomena, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:AudioInfo umbel:Diseases umbel:Events umbel:NaturalPhenomena umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition """Notable inclusions are minerals, compounds, chemicals, or physical objects that are not the outcome of purposeful human effort, but are found naturally occurring. Other natural objects (such as rock, fossil, etc.) are also found under this SuperType. Natural Substances include subatomic particles. The contrast is with Earthscape, which covers natural "features" or living substances, which are covered under the appropriate SuperTypes. Chemicals can be Natural Substances, but only if they are naturally occurring, such as limestone or salt."""@en;
   skos:prefLabel "natural substance"@en.
 
@@ -239,7 +241,7 @@ umbel:Notations
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time, umbel:Workplaces ) ];
+      owl:unionOf ( umbel:Animals umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time umbel:Workplaces ) ];
   skos:definition """Akin to conceptual works, these are codified means of human expression. Examples range from human languages themselves, to more domain-specific cases such as chemical symbols, genetic code (A-G-C-T), protocols, and computer languages, mathematical and set notations, etc. 
 
 Identifiers (numeric or alphanumeric identifiers for objects, often in a highly patterned way, such as phone numbers, URLs, zip and postal codes, SKUs, product codes, etc.), Units (any of the various ways in which measurement, space, volume, weight, speed, intensity, temperature, calories, siesmic intensity or other quantitative descriptions of phenomena can be made) and key reference types are also included in this SuperType """@en;
@@ -250,7 +252,7 @@ umbel:Numbers
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This unique SuperType is for any abstract representation of numbers and numerics "@en;
   skos:prefLabel "numbers"@en.
 
@@ -259,7 +261,7 @@ umbel:Organizations
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FoodDrink, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FoodDrink umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:WrittenInfo ) ];
   skos:definition """Organization is a broad SuperType and includes formal collections of humans, sometimes by legal means, charter, agreement or some mode of formal understanding. Examples include geoplotical entities such as nations, municipalities or countries; or companies, institutes, governments, universities, militaries, political parties, game groups, international organizations, trade associations, etc. All institutions, for example, are organizations.
 
 Also included are informal collections of humans. Informal or less defined groupings of humans may result from ethnicity or tribes or nationality or from shared interests (such as social networks or mailing lists) or expertise ("communities of practice"). This dimension also includes the notion of identifiable human groups with set members at any given point in time. Examples include music groups, cast members of a play, directors on a corporate Board, TV show members, gangs, mobs, juries, generations, minorities, etc.
@@ -272,7 +274,7 @@ umbel:PersonTypes
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "The appropriate SuperType for all named, individual human beings. This SuperType also includes the assignment of formal, honorific or cultural titles given to specific human individuals. It further includes names given to humans who conduct specific jobs or activities (the latter case is known as an avocation). Examples include steelworker, waitress, lawyer, plumber, artisan. Ethnic groups are specifically included."@en;
   skos:prefLabel "person types"@en.
 
@@ -281,7 +283,7 @@ umbel:Plants
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType includes all plant types and flora, including flowering plants, algae, non-flowering plants, gymnosperms, cycads, and plant parts and body types. Note that all Plant Parts are also included."@en;
   skos:prefLabel "plants"@en.
 
@@ -290,7 +292,7 @@ umbel:Products
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Diseases, umbel:Extraterrestrial, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time ) ];
+      owl:unionOf ( umbel:Diseases umbel:Extraterrestrial umbel:Geopolitical umbel:NaturalPhenomena umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time ) ];
   skos:definition "This is the largest SuperType and includes any instance offered for sale or performed as a commercial service. Often physical object made by humans that is not a conceptual work or a facility, such as vehicles, cars, trains, aircraft, spaceships, ships, foods, beverages, clothes, drugs, weapons. Products also include the concept of 'state' (e/g/., on/off) "@en;
   skos:prefLabel "products"@en.
 
@@ -299,7 +301,7 @@ umbel:Prokaryotes
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Products umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "The Prokaryotes include all prokaryotic organisms, including the Monera, Archaebacteria, Bacteria, and Blue-green algas. Also included in this SuperType are viruses and prions."@en;
   skos:prefLabel "prokaryotes"@en.
 
@@ -308,7 +310,7 @@ umbel:ProtistsFungus
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Products umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This is the remaining cluster of eukaryotic organisms, specifically including the fungus and the protista (protozoans and slime molds)."@en;
   skos:prefLabel "protists fungus"@en.
 
@@ -333,7 +335,7 @@ umbel:Society
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Events, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:Workplaces ) ];
+      owl:unionOf ( umbel:Activities umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Events umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:Workplaces ) ];
   skos:definition "This category includes concepts related to political systems, laws, rules or cultural mores governing societal or community behavior, or doctrinal, faith or religious bases or entities (such as gods, angels, totems) governing spiritual human matters. Culture, Issues, beliefs and various activisms (most -isms) are included "@en;
   skos:prefLabel "society"@en.
 
@@ -342,7 +344,7 @@ umbel:StructuredInfo
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalSubstances, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time, umbel:Workplaces ) ];
+      owl:unionOf ( umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FoodDrink umbel:Geopolitical umbel:NaturalSubstances umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time umbel:Workplaces ) ];
   skos:definition "This information SuperType is for all kinds of structured information and datasets, including compute programs, databases, files, Web pages and structured data that can be presented in tabular form "@en;
   skos:prefLabel "structured information"@en.
 
@@ -356,7 +358,7 @@ umbel:Time
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Products, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:VisualInfo, umbel:Workplaces, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Products umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:VisualInfo umbel:Workplaces umbel:WrittenInfo ) ];
   skos:definition "This SuperType is for specific time or date or period (such as eras, or days, weeks, months type intervals) references in various formats "@en;
   skos:prefLabel "time"@en.
 
@@ -371,7 +373,7 @@ umbel:VisualInfo
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:FinanceEconomy, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalSubstances, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:Time, umbel:Workplaces ) ];
+      owl:unionOf ( umbel:Animals umbel:Diseases umbel:Drugs umbel:Earthscape umbel:FinanceEconomy umbel:FoodDrink umbel:Geopolitical umbel:NaturalSubstances umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:Time umbel:Workplaces ) ];
   skos:definition "any still image or picture or streaming video human work, with or without audio. Examples include graphics, pictures, movies, TV shows, individual shows from a TV show, etc. "@en;
   skos:prefLabel "visual information"@en.
 
@@ -380,7 +382,7 @@ umbel:Workplaces
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Activities, umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Events, umbel:Extraterrestrial, umbel:FoodDrink, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Notations, umbel:Numbers, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Society, umbel:StructuredInfo, umbel:Time, umbel:VisualInfo, umbel:WrittenInfo ) ];
+      owl:unionOf ( umbel:Activities umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Events umbel:Extraterrestrial umbel:FoodDrink umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Notations umbel:Numbers umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Society umbel:StructuredInfo umbel:Time umbel:VisualInfo umbel:WrittenInfo ) ];
   skos:definition "These are various workplaces and areas of human activities, ranging from single person workstations to large aggregations of people (but which are not formal political entities) "@en;
   skos:prefLabel "workplaces"@en.
 
@@ -389,7 +391,7 @@ umbel:WrittenInfo
   rdfs:subClassOf umbel:SuperType;
   owl:disjointWith
     [ a owl:Class;
-      owl:unionOf ( umbel:Animals, umbel:AudioInfo, umbel:Chemistry, umbel:Diseases, umbel:Drugs, umbel:Earthscape, umbel:Extraterrestrial, umbel:Facilities, umbel:FoodDrink, umbel:Geopolitical, umbel:NaturalPhenomena, umbel:NaturalSubstances, umbel:Numbers, umbel:Organizations, umbel:PersonTypes, umbel:Plants, umbel:Prokaryotes, umbel:ProtistsFungus, umbel:Time, umbel:Workplaces ) ];
+      owl:unionOf ( umbel:Animals umbel:AudioInfo umbel:Chemistry umbel:Diseases umbel:Drugs umbel:Earthscape umbel:Extraterrestrial umbel:Facilities umbel:FoodDrink umbel:Geopolitical umbel:NaturalPhenomena umbel:NaturalSubstances umbel:Numbers umbel:Organizations umbel:PersonTypes umbel:Plants umbel:Prokaryotes umbel:ProtistsFungus umbel:Time umbel:Workplaces ) ];
   skos:definition "This SuperType includes any general material written by humans including books, blogs, articles, manuscripts, but any written information conveyed via text."@en;
   skos:prefLabel "written information"@en.
 
@@ -408,7 +410,7 @@ This property is therefore used to create a nearly equivalent assertion (however
 
 umbel:hasCharacteristic
   a owl:AnnotationProperty;
-  skos:definition "The property umbel:hasCharacteristic is used to assert the relation between a Reference Concept and external properties that may be used in external ontologies to characterize, describe, or provide attributes for data records associated with that concept. It is via this property or its inverse, umbel:isCharacteristicOf, that external data characterizations may be incorporated and modeled within a domain ontology based on the UMBEL vocabulary."@en;
+  skos:definition "The property umbel:hasCharacteristic is used to assert the relation between a Reference Concept and external properties that may be used in external ontologies to characterize, describe, or provide attributes for data records associated with that concept. It is via this property or its inverse umbel:isCharacteristicOf, that external data characterizations may be incorporated and modeled within a domain ontology based on the UMBEL vocabulary."@en;
   skos:prefLabel "has characteristic"@en.
 
 umbel:hasMapping
@@ -432,7 +434,7 @@ This property is therefore used to create a topical assertion between an individ
 
 umbel:isCharacteristicOf
   a owl:AnnotationProperty;
-  skos:definition "The property umbel:isCharacteristicOf is used to assert the relation between a property and a Reference Concept (or its punned individual) to which it applies. Such properties may be used in external ontologies to characterize, describe, or provide attributes for data records associated with that concept. It is via this property or its inverse, umbel:hasCharacteristic, that external data characterizations may be incorporated and modeled within a domain ontology based on the UMBEL vocabulary."@en;
+  skos:definition "The property umbel:isCharacteristicOf is used to assert the relation between a property and a Reference Concept (or its punned individual) to which it applies. Such properties may be used in external ontologies to characterize, describe, or provide attributes for data records associated with that concept. It is via this property or its inverse umbel:hasCharacteristic, that external data characterizations may be incorporated and modeled within a domain ontology based on the UMBEL vocabulary."@en;
   skos:prefLabel "is characteristic of"@en.
 
 umbel:isLike
@@ -616,7 +618,7 @@ umbel:relatesToOtherOrganism
   rdfs:domain owl:Thing;
   rdfs:range
     [ a owl:Class;
-      owl:unionOf ( umbel:Prokaryotes, umbel:ProtistsFungus ) ];
+      owl:unionOf ( umbel:Prokaryotes umbel:ProtistsFungus ) ];
   rdfs:subPropertyOf owl:topObjectProperty;
   skos:definition "This predicate relates an external entity to the SuperType (ST) shown. It indicates there is a relationship to the ST of a verifiable nature, but which is undetermined as to strength or a full rdf:type relationship."@en;
   skos:prefLabel "relates to other organism"@en.
